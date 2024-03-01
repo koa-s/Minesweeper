@@ -35,7 +35,6 @@ public void setMines()
     if (!mines.contains(buttons[randoRow][randoCol]))
     {
       mines.add(buttons[randoRow][randoCol]);
-      System.out.println(randoRow + "," + randoCol);
     } else
     {
       i--;
@@ -184,7 +183,6 @@ public class MSButton
           if (isValid(i, j) && !buttons[i][j].clicked)
           {
             buttons[i][j].mousePressed();
-            System.out.println(i+","+j);
           }
         }
       }
